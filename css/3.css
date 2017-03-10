@@ -1,0 +1,77 @@
+body{background: black; font-size: 14px;margin: 0;width: 100%; line-height: 30px;
+}
+h1,h2,h3,h4,h5,h6,p,ul{margin: 0;padding: 0}
+header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
+
+
+}
+.lax{
+  display: flex;float: left;padding: 1%;margin: 1%;width: auto;
+}
+.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;}
+.menubar{background: black;
+
+}
+.menubar ul{
+  display: flex;flex-flow: row wrap;justify-content:flex-end;
+
+}
+.menubar ul li{
+  list-style: none;background: black; color: white;padding: 1.5%;margin: 1.5%;font-size: 20px;
+
+}
+.menubar ul li a{
+  text-decoration:inherit;color: white;
+
+}
+.menubar ul li:hover{background: gray;border-radius: 10px;}
+.menubar ul li:hover a{color: white}
+section{
+  display: flex;flex-direction: row;width: 100%;
+}
+.img{
+margin: 0%;
+}
+.malla{
+    @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+  text-align: center;color: black;margin-bottom: 0.8%;background: gray;padding: 2%;
+font-family: 'Clicker Script', cursive;
+}
+footer{
+  background: black;padding: 1%;display: flex;flex-direction: row;
+   margin: 0%;}
+
+   .social{
+
+   }
+
+   .social ul{
+     display: flex;flex-flow: row;flex-direction:column-reverse;
+   }
+   .social ul li{
+     list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
+   }
+   .social ul li a  {
+  text-decoration: inherit;
+}
+.social ul li:hover{background: gray; border-radius: 10px}
+.social ul li:hover a{color: white}
+
+
+.googlemap{ width: 60%;
+  margin: 1%;padding: 2%;display: flex;flex-direction: row-reverse;
+  text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+}
+
+
+@media all and (max-width: 600px){
+  .menubar ul{
+    flex-flow: column wrap;
+  }
+  section{
+    flex-flow: column wrap;
+  }
+  .article{
+    width: 98%;
+    margin:1%;
+  }

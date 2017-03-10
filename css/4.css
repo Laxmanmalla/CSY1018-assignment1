@@ -1,0 +1,121 @@
+body{background: black; font-size: 14px;margin: 0;width: 100%; line-height: 30px;
+}
+h1,h2,h3,h4,h5,h6,p,ul{margin: 0;padding: 0}
+header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
+
+
+}
+.lax{
+  display: flex;float: left;padding: 0%;margin: 0%;width: auto; border-radius: 50%;
+
+}
+.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;}
+.menubar{background: black;
+
+
+
+div:hover {
+    width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+}
+.menubar ul{
+  display: flex;flex-flow: row wrap;justify-content:flex-end;
+
+}
+.menubar ul li{
+  list-style: none;background: black; color: white;padding: 1.5%;margin: 1.5%;font-size: 20px;
+
+}
+.menubar ul li a{
+  text-decoration:inherit;color: white;
+
+}
+.menubar ul li:hover{background: gray;border-radius: 10px;}
+.menubar ul li:hover a{color: white}
+section{
+background: white;width: 100%;display: flex;flex-direction: row;
+}
+
+
+.form{
+
+  border: 2px;
+  background: gray;
+  padding: 0px 0 ;
+  margin: 0px auto;
+  margin-left: 2px;
+
+}
+.form label{
+  display: block;
+  margin: 5px 0 5px 20px;
+  color: white;
+}
+.form input{
+  margin: 0 0 0 15px;
+  width: 250px;
+
+  }
+.form textarea{
+  width: 250px;
+  margin: 0 0 0 20px;
+  }
+  .form fieldset{
+    padding: 0 0 20px 0;
+  }
+  .form h4{
+    font-size: bold;
+  }
+.detail{
+  padding: 4.7%;margin: 0%; text-align: center;
+  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+  font-family: 'Clicker Script', cursive;
+
+}
+footer{
+ background: black;padding: 1%;display: flex;flex-direction: row;
+   margin: 0%;}
+
+   .social{
+
+   }
+
+   .social ul{
+     display: flex;flex-flow: row;flex-direction:column-reverse;
+   }
+   .social ul li{
+     list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
+   }
+   .social ul li a  {
+  text-decoration: inherit;
+}
+.social ul li:hover{background: gray; border-radius: 10px}
+.social ul li:hover a{color: white}
+.present{
+  font-size: 15px;color: white;
+}
+
+
+.googlemap{ width: 60%;
+  margin: 1%;padding: 2%;display: flex;flex-direction: row-reverse;
+  text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+}
+.article{
+  text-align: left;color: white;
+}
+
+@media all and (max-width: 600px){
+	.menubar ul{
+		flex-flow: column wrap;
+	}
+	section{
+		flex-flow: column wrap;
+	}
+	.article{
+		width: 98%;
+		margin:1%;
+	}
