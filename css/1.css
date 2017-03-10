@@ -17,6 +17,18 @@ position:static;
 
 .lax{
   display: flex;float: left;padding: 1%;margin: 1%;width: auto;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
 }
 .name {text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 10%}
 .menubar{background: black;
@@ -48,32 +60,37 @@ padding-left: 70%;
   font-family: 'Clicker Script', cursive;
 }
 
-  footer{
-    background: black;padding: 2%;display: flex;flex-direction: row;
-     margin: 0%;}
+footer{
+  background: black;padding: 1%;display: flex;flex-direction: row;
+   margin: 0%;width: 100%;}
 
-     .social{
+   .social{
+padding-right: 35%;width:
+   }
 
-     }
+   .social ul{
+     display: flex;flex-direction: column;
+   }
+   .social ul li{
+     list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
+   }
+   .social ul li a  {
+  text-decoration: inherit;
+}
+.social ul li:hover{background: gray; border-radius: 10px}
+.social ul li:hover a{color: white}
 
-     .social ul{
-       display: flex;flex-flow: row;flex-direction:column-reverse;
-     }
-     .social ul li{
-       list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
-     }
-     .social ul li a  {
-    text-decoration: inherit;
-  }
-  .social ul li:hover{background: gray; border-radius: 10px}
-  .social ul li:hover a{color: white}
+}
+.googlemap{
+  margin-top: 2%;padding: 0%;display: flex;flex-direction: row-reverse;;
 
-
-  .googlemap{ width: 60%;
-    margin: 1%;padding: 2%;display: flex;flex-direction: row-reverse;
-    text-shadow: rgba(0,0,0,0.01) 0 0 1px;
-  }
-
+}
+.googlemap h1{
+  color: white;text-align: left;padding-left: 30%;
+}
+ .googlemap p{
+   color: white;
+ }
 
   @media all and (max-width: 600px){
   	.menubar ul{

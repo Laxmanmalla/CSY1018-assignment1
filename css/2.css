@@ -1,14 +1,33 @@
-body{background: black; font-size: 14px;margin: 0;width: 100%; line-height: 30px;
+body
+{ background-image: url('../images/nat.jpg');
+  background-repeat: no-repeat;
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+   line-height: 30px;
 }
+
 h1,h2,h3,h4,h5,h6,p,ul{margin: 0;padding: 0}
 header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
-
 
 }
 .lax{
   display: flex;float: left;padding: 1%;margin: 1%;width: auto;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: mymove 5s infinite;
 }
-.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 100px;}
+}
+
+.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 10%;}
 .menubar{background: black;
 
 }
@@ -27,18 +46,28 @@ header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
 .menubar ul li:hover{background: gray;border-radius: 10px;}
 .menubar ul li:hover a{color: white}
 section{
-  background: #5b5b5b;flex-flow: right;
+display: flex;flex-direction: row;width: 100%;
+}
+.img{
+margin: 0%;margin-top: 0%;margin-bottom: 0%;padding: 0%;
+}
+.para{
+  font-size: 20px;
+  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+  color: white;font-size: 15px;
+  font-family: 'Clicker Script', cursive;text-align: center;margin-bottom: 0.8%;padding: 2%;
 }
 footer{
   background: black;padding: 1%;display: flex;flex-direction: row;
-   margin: 0%;}
+   margin: 0%;width: 100%;}
 
    .social{
+padding-right: 35%;
+  }
 
-   }
 
    .social ul{
-     display: flex;flex-flow: row;flex-direction:column-reverse;
+     display: flex;flex-direction: column;
    }
    .social ul li{
      list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
@@ -49,10 +78,16 @@ footer{
 .social ul li:hover{background: gray; border-radius: 10px}
 .social ul li:hover a{color: white}
 
+}
+.googlemap{
+  margin-top: 2%;padding: 0%;display: flex;flex-direction: row-reverse;;
 
-.googlemap{ width: 60%;
-  margin-top: 1%;padding: %;display: flex;flex-direction:row-reverse;
-
+}
+.googlemap h1{
+  color: white;text-align: left;padding-left: 25%;
+}
+.googlemap p{
+  color: white;
 }
 
 
