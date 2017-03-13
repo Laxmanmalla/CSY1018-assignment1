@@ -51,6 +51,9 @@ position:static;
 section{display: flex; flex-direction: column;width: 100%;
 
 }
+section img{
+  border-radius: 20%;
+}
 .images{
 padding-left: 70%;
 }
@@ -93,6 +96,9 @@ padding-right: 35%;width:
  }
 
   @media all and (max-width: 600px){
+    body{
+      background-color: black;
+    }
   	.menubar ul{
   		flex-flow: column wrap;
   	}

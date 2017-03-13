@@ -3,12 +3,12 @@ body
   background-repeat: no-repeat;
   font-size: 14px;
   margin: 0;
-  width: 100%;
+  width: cover;
    line-height: 30px;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{margin: 0;padding: 0}
-header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
+header{background: black;font-size: 14px;padding: 0.5%;
 
 }
 .lax{
@@ -20,12 +20,15 @@ header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
     position: relative;
     -webkit-animation: mymove 5s infinite;
     animation: mymove 5s infinite;
+    background-size: cover;
+
 }
 
 @-webkit-keyframes mymove {
     from {left: 0px;}
     to {left: 100px;}
 }
+
 
 .name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 10%;}
 .menubar{background: black;
@@ -36,11 +39,13 @@ header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
 
 }
 .menubar ul li{
-  list-style: none;background: black; color: white;padding: 1.5%;margin: 1.5%;font-size: 20px;
+  list-style: none;background: black; color: white;
+  padding: 1.5%;margin: 1.5%;font-size: 20px;
 
 }
 .menubar ul li a{
-  text-decoration:inherit;color: white;
+    text-decoration:inherit;
+    color: white;
 
 }
 .menubar ul li:hover{background: gray;border-radius: 10px;}
@@ -59,7 +64,7 @@ margin: 0%;margin-top: 0%;margin-bottom: 0%;padding: 0%;
 }
 footer{
   background: black;padding: 1%;display: flex;flex-direction: row;
-   margin: 0%;width: 100%;}
+   margin: 0%;width: 100%;margin-top: -0.8%;}
 
    .social{
 padding-right: 35%;
@@ -92,13 +97,25 @@ padding-right: 35%;
 
 
 @media all and (max-width: 600px){
-  .menubar ul{
-    flex-flow: column wrap;
+  body{
+    background-image: none;
+    background-color: black;
   }
   section{
-    flex-flow: column wrap;
-  }
-  .article{
-    width: 98%;
-    margin:1%;
-  }
+    display: flex;
+    flex-direction: column;
+
+  .img {
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+footer{
+  margin-top: 0%;
+}
+.lax{
+  background-size: cover;
+}
+
+}
