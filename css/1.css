@@ -14,6 +14,9 @@ position:static;
 
 
 }
+.header img{
+  border-radius: 50%;
+}
 
 .lax{
   display: flex;float: left;padding: 1%;margin: 1%;width: auto;
@@ -24,6 +27,7 @@ position:static;
     position: relative;
     -webkit-animation: mymove 5s infinite;
     animation: mymove 5s infinite;
+
 }
 
 @-webkit-keyframes mymove {
@@ -68,8 +72,14 @@ footer{
    margin: 0%;width: 100%;}
 
    .social{
-padding-right: 35%;width:
-   }
+  padding-right: 35%;transition: padding 3s;
+  }
+  .social:hover{
+   padding: 0.3em 6em;background: black;
+  box-shadow: 3px 3px 7px black;
+
+  }
+
 
    .social ul{
      display: flex;flex-direction: column;

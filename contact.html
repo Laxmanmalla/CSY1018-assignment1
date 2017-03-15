@@ -27,25 +27,41 @@
      </div>
      </header>
      <section>
-
-       <div class="form">
-
-          <form>
-          <fieldset>
-           <h4>contact Me:</h4>
-           <label class="labelone"for ="name">name:</label>
-           <input name="name">
-           <label for ="email">Email:</label>
-           <input name="email">
-           <label for ="comment">comments:</label>
-           <textarea name="comments"></textarea>
-         </fieldset>
-         <fieldset>
-           <input class="btn"type="submit"value="send email">
-           <input class="btn"type="reset"value="reset form">
+          
+         <div class="name">
+         <form action="contact.html" method="get">
+           <ul>
+             <li><label>first name:</label></li>
+             <li><label>last name:</label></li>
+             <li><label>gender:</label></li>
+             <li><label>Profession:</label></li>
+             <li><label>Birthdate:</label></li>
+             <li><label>E-mail:</label></li>
+             <li><label>feedback:</label></li>
+           </ul>
          </div>
+         <div class="data">
+           <ul>
+             <li><input type="text" name="firstname"placeholder="firstname"required></li>
+             <li><input type="text" name="lastname"placeholder="lastname"required></li>
+             <li> <input type="radio" name="gender" value="male"> Male
+             <input type="radio" name="gender" value="female"> Female</li>
+             <li><select name="profession">
+                 <option value="student">student</option>
+                 <option value="lecturer">lecturer</option>
+                 <option value="programmer">programmer</option>
+                   <option value="coder">coder</option>
+               </select>
+             </li>
+             <li><input type="date"name="birth_date"value="date"></li>
+             <li><input type="E-mail"name="E-mail"placeholder="abc@gmail.com"><li>
+             <li> <textarea name:"feedback" rows="7"cols="55"></textarea></li>
+             <li><input type="submit"class="submit"name="submit">
+            <input class="reset"type="reset"value="reset form"></li>
+           </ul>
          </form>
-         </fieldset>
+       </div>
+
          <div class="detail">
            <h1>LET'S KEEP IN TOUCH!</h1>
            <h1>EMAIL</h1>

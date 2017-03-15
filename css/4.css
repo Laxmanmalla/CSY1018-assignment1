@@ -21,7 +21,7 @@ header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
     to {left: 100px;}
 }
 
-.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 10%;}
+.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 15%;}
 .menubar{background: black;
 
 
@@ -42,6 +42,7 @@ div:hover {
   list-style: none;background: black; color: white;padding: 1.5%;margin: 1.5%;font-size: 20px;
 
 }
+
 .menubar ul li a{
   text-decoration:inherit;color: white;
 
@@ -51,37 +52,56 @@ div:hover {
 section{
 background: white;width: 100%;display: flex;flex-direction: row;
 }
+form{
 
+  font-size: 20px;
 
-.form{
-
-  border: 2px;
-  background: gray;
-  padding: 0px 0 ;
-  margin: 0px auto;
-  margin-left: 2px;
+color: orange;
+}
+.name {width: 70%;
+padding-right: 5%;margin-left: 5%;
+}
+.name ul{
+  text-align: center;
+}
+.name li{
+  list-style: none;margin: 4%;margin-bottom: 0.6%;transition: padding 3s;list-style: none;
+}
+.name li:hover{
+  padding: 0.3em 6em;background: black;
+box-shadow: 3px 3px 7px black;
+}
+.data{
+  width: 40%;
+}
+.data ul{
+  text-align: left;
 
 }
-.form label{
-  display: block;
-  margin: 5px 0 5px 20px;
-  color: white;
+.data li{
+  list-style: none;margin: 3.5%;padding: 0.5%;padding-bottom: 0.4%;
 }
-.form input{
-  margin: 0 0 0 15px;
-  width: 250px;
+input{
+  color: orange;padding: 0.2em;border: 1.5px solid red;
+}
+.submit{
+  transition: padding 3s;
+}
 
-  }
-.form textarea{
-  width: 250px;
-  margin: 0 0 0 20px;
-  }
-  .form fieldset{
-    padding: 0 0 20px 0;
-  }
-  .form h4{
-    font-size: bold;
-  }
+
+.submit:hover{
+  padding: 0.3em 6em;background: black;
+box-shadow: 3px 3px 7px black;
+}
+.reset{
+    transition: padding 3s;
+}
+.reset:hover{
+  padding: 0.3em 6em;background: black;
+box-shadow: 3px 3px 7px black;
+
+}
+
 .detail{
   padding: 4.7%;margin: 0%; text-align: center;
   @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
@@ -93,8 +113,13 @@ footer{
    margin: 0%;width: 100%;}
 
    .social{
-padding-right: 35%;width:
-   }
+padding-right: 35%;transition: padding 3s;
+ }
+ .social:hover{
+   padding: 0.3em 6em;background: black;
+ box-shadow: 3px 3px 7px black;
+
+ }
 
    .social ul{
      display: flex;flex-direction: column;
@@ -125,9 +150,22 @@ padding-right: 35%;width:
 		flex-flow: column wrap;
 	}
 	section{
-		flex-flow: column wrap;
+		flex-flow: row nowrap;
+    font-size: 10px;
 	}
+  .detail{
+    display: none;
+  }
 	.article{
 		width: 98%;
 		margin:1%;
 	}
+footer{
+width: auto;
+}
+.social{
+  width: 50%;
+}
+.googlemap{
+  width: 50%;
+}
