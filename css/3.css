@@ -1,104 +1,193 @@
-body{background: black; font-size: 14px;margin: 0;width: 100%; line-height: 30px;
+body{
+  background: #660000;
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+  line-height: 30px;
 }
-h1,h2,h3,h4,h5,h6,p,ul{margin: 0;padding: 0}
-header{background: black;font-size: 14px;margin-bottom: 0.5%;padding: 0.5%;
-
-
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin: 0;
+  padding: 0
+}
+header{
+  background: #4C000C;
+  font-size: 14px;
+  margin-bottom: 0.5%;
+  padding: 0.5%;
+  box-shadow: 0px 2px 2px 0px #;
 }
 .lax{
-  display: flex;float: left;padding: 1%;margin: 1%;width: auto;
+  display: flex;
+  float: left;
+  padding: 1%;
+  margin: 1%;
+  width: auto;
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: #4C000C;
     font-weight: bold;
     position: relative;
     -webkit-animation: mymove 5s infinite;
     animation: mymove 5s infinite;
 }
+.lax img{
+  width:150px;
+  height:100px;
+  border-radius: 20px;
+}
+
 
 @-webkit-keyframes mymove {
     from {left: 0px;}
     to {left: 100px;}
 }
-.name{text-align: center;color: white;width: auto;font-size: 25px;font-style:normal;width: auto;padding-right: 10%;}
-.menubar{background: black;
-
+.name{
+  text-align: center;
+  color: white;
+  width: auto;
+  font-size: 15px;
+  font-style:normal;
+  width: auto;
+  padding-right: 10%;
+  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+  font-family: 'Fira Sans', sans-serif;
+}
+.menubar{
+  background: #4C000C;
 }
 .menubar ul{
-  display: flex;flex-flow: row wrap;justify-content:flex-end;
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-end;
 }
 .menubar ul li{
-  list-style: none;background: black; color: white;padding: 1.5%;margin: 1.5%;font-size: 20px;
-
+  list-style: none;
+  background: #7A0012;
+   color: white;
+   padding: 1%;
+   margin: 1.5%;
+   font-size: 20px;
 }
 .menubar ul li a{
-  text-decoration:inherit;color: white;
-
+  text-decoration:inherit;
+  color: white;
 }
-.menubar ul li:hover{background: gray;border-radius: 10px;}
-.menubar ul li:hover a{color: white}
+.menubar ul li:hover{
+  background: gray;
+  border-radius: 10px;
+}
+.menubar ul li:hover a{
+  color: white}
 section{
-  display: flex;flex-direction: row;width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .img{
 margin: 0%;
 }
+.img img{
+  width:500px;
+  height:500px;
+}
 .malla{
     @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
-  text-align: center;color: black;margin-bottom: 0.8%;background: gray;padding: 2%;
+  text-align: center;
+  color: #660000;
+  margin-bottom: 0.8%;
+  background: gray;
+  padding: 2%;
 font-family: 'Clicker Script', cursive;
 }
 .malla h1{
   transition: padding 3s;
 }
+.malla a:hover{
+      padding: 0.4em 1em;
+      background: #660000;
+    box-shadow: 3px 3px 7px black;
+    border-radius: 5%;
+    color: gray;
+    }
 .malla h1:hover{
-    padding: 0.3em 6em;background: black;color: orange;
+    padding: 0.3em 6em;
+    background: #660000;
+    color: gray;
   box-shadow: 3px 3px 7px black;
-
 }
 footer{
-  background: black;padding: 1%;display: flex;flex-direction: row;
-   margin: 0%;width: 100%;}
-
-   .social{
-padding-right: 35%;transition: padding 3s;
+  background: #660000;
+  padding-top:  1%;
+  padding-bottom: 1%;
+   margin: 0%;
+   width: 100%;
+   margin-top: -0.8%;
  }
- .social:hover{
-   padding: 0.3em 6em;background: black;
- box-shadow: 3px 3px 7px black;
+ .quotes{
+  background-color: #7A0012;
 
- }
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 3%;
 
+}
+.copy{
 
+  background-color: #660000;
+  color: white;
+  text-align: center;
+}
+.copy pre{
+
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+.social {
+padding-left: 615px;
+
+}
    .social ul{
-     display: flex;flex-direction: column;
-   }
+     display: flex;
+     flex-direction: row;
+   /*padding-left: 35%;
+   padding-top: 2%;*/
+
+ }
    .social ul li{
-     list-style: none;background: black; color: white;padding: 0.5%;margin:0.3 %;
+     list-style: none;
+     background: #660000;
+      color: white;
+      padding: 0.5%;
+      margin:0.3 %;
    }
    .social ul li a  {
   text-decoration: inherit;
 }
-.social ul li:hover{background: gray; border-radius: 10px}
-.social ul li:hover a{color: white}
+.social ul li:hover{
+  background: gray;
+   border-radius: 30%;
 
-}
-.googlemap{
-  margin-top: 2%;padding: 0%;display: flex;flex-direction: row-reverse;;
-
-}
-.googlemap h1{
-  color: white;text-align: left;padding-left: 30%;
-}
-.googlemap p{
-  color: white;
-}
+ }
+.social ul li:hover a{
+  color: white}
 
 @media all and (max-width: 600px){
-  .menubar ul{
-    flex-flow: column wrap;
+  .lax {
+    margin-top: 16%;
+    padding-bottom: 2%;
   }
+  	.menubar ul{
+  		flex-flow: column wrap;
+      width: 100%;
+      padding-top: 10%;
+  	}
+
+    .menubar ul li {
+      text-align: center;
+    }
   section{
     flex-flow: column wrap;
   }
@@ -106,3 +195,7 @@ padding-right: 35%;transition: padding 3s;
     width: 98%;
     margin:1%;
   }
+  .social {
+    padding-left: 25%;
+  }
+}
