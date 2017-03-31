@@ -1,115 +1,113 @@
-body{
-  background: #660000;
-   font-size: 14px;
-   margin: 0;
-   width: 100%;
-    line-height: 30px;
-
+/*
+Name:Laxman Malla
+UN ID:16443353*/
+/*My css file of contact.html contain body, header, section, footer and lastly I
+have used @media to moake responsive */
+body{/* this helps to make body part attractive*/
+  font-size: 14px;/*it gives fontsize of body part 14px*/
+  margin: 0;/*it gives margin 0 to body part*/
+  width: cover;
+  line-height: 30px;/*It gives line height of body part 30px*/
 }
-h1,h2,h3,h4,h5,h6,p,ul{
+h1,h2,h3,h4,h5,h6,p,ul{/*this is written to maintain margin
+  and padding in header and paragraph */
   margin: 0;
-  padding: 0;
-}
-header{
-
+  padding: 0}
+header{/*this helps to make attractive header*/
   background: #4C000C;
   font-size: 14px;
-  padding: 0.5%;
-  box-shadow: 2px 2px 2px 2px;
+  padding: 0.5%;/*It gives padding 0.5% to the header*/
 }
-.lax{
-  display: flex;
-  float: left;
+.lax{/*It is the first div class of header*/
+  float: left;/*It helps this div to move left*/
   padding: 1%;
   margin: 1%;
   width: auto;
-    width: 50px;
-    height: 50px;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s infinite;
-    animation: mymove 5s infinite;
-    background-size: cover;
+  width: 50px;/*This gives the width of the lax div pic 50px*/
+  height: 50px;/*This gives the height of the lax div pic 50px*/
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;/*It gives the animation to the logo*/
+  animation: mymove 5s infinite;
+  background-size: cover;/*It provide total size of the lax div cover i.e. fit to the page*/
 }
 .lax img{
-  width:150px;
-  height:100px;
-  border-radius: 20px;
+  width:150px;/*This gives the width of the logo pic 150px*/
+  height:100px;/*This gives the height of the logo pic 100px*/
+  border-radius: 20px;/*It provide the border radius 20px of the pic so that it become curved*/
 }
-.name h1{
-  padding-right: 17%;
-}
-
 @-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 100px;}
+  from {left: 0px;}/*It moves the logo from left */
+  to {left: 100px;}/*It moves end to left only*/
 }
 .name{
-  text-align: right;
-  color: white;
+  text-align: center;/*It put my name in center of the div*/
+  color: white;/*It provide the font color s white*/
   width: auto;
   font-size: 15px;
   font-style:normal;
   width: auto;
   padding-right: 10%;
-  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);/*It helps to give new font from googlefont*/
   font-family: 'Fira Sans', sans-serif;
 }
-.menubar{
+.menubar{/*This provide whole menubar div color as #4C000C*/
   background: #4C000C;
 }
 .menubar ul{
   display: flex;
   flex-flow: row wrap;
-  justify-content:flex-end;
+  justify-content:flex-end;/*It keep the whole navigation content to the end*/
 }
-.menubar ul li{
-  list-style: none;
+.menubar ul li{/*It modify all the items inside the ul tag */
+  list-style: none;/*By this the list style will be nothing*/
   background: #7A0012;
-   color: white;
+  color: white;
   padding: 1%;
   margin: 1.5%;
   font-size: 20px;
 }
-.menubar ul li a{
-    text-decoration:inherit;
-    color: white;
+.menubar ul li a{/*this is for link items*/
+  text-decoration:inherit;/*It remove the line under the navigation items*/
+  color: white;
 }
-.menubar ul li:hover{
+.menubar ul li:hover{/*It helps in hover of the navigation items
+  whose color changes to gray on hover and its border radius is made 10px to make curved in edge*/
   background: gray;
   border-radius: 10px;
 }
 .menubar ul li:hover a{
-  color: white}
-section{
-background: white;
-width: 100%;
-display: flex;
-flex-direction: row;
+   color: white}
+section{/*It helps to make attractive section*/
+   background: white;
+   width: 100%;
+   display: flex;
+   flex-direction: row;/*this helps to put all row of section parts in one row*/
 }
-form{
+form{/*It helps to make form*/
   font-size: 20px;
-color: gray;
+  color: gray;
 }
 .name {
-width: 70%;
-padding-right: 5%;
-margin-left: 5%;
+  width: 70%;
+  padding-right: 5%;
+  margin-left: 5%;
 }
 .name ul{
-  text-align: center;
+  text-align: center;/*It put name div in center*/
 }
 .name li{
-  list-style: none;
+  list-style: none;/*By this the list style will be nothing*/
   margin: 4%;
   margin-bottom: 0.6%;
   transition: padding 3s;
   list-style: none;
 }
-.name li:hover{
+.name li:hover{/*this helps to change color to gray of all the
+  list items inside unordered list of nave div while hovering and box-shadow also appear*/
   padding: 0.3em 6em;
   background: #660000;
-box-shadow: 3px 3px 7px black;
+  box-shadow: 3px 3px 7px black;
 }
 .data{
   width: 40%;
@@ -118,48 +116,48 @@ box-shadow: 3px 3px 7px black;
   text-align: left;
 }
 .data li{
-  list-style: none;
+  list-style: none;/*By this the list style will be nothing*/
   margin: 3.5%;
   padding: 0.5%;
   padding-bottom: 0.4%;
 }
-input{
+input{/*this helps to give design like color-gray,border-1.5px with gray color in input box*/
   color: gray;
   padding: 0.2em;
   border: 1.5px solid gray;
 }
-.submit{
+.submit{/*submit box is using the transition so it moves*/
   transition: padding 3s;
 }
-.submit:hover{
+.submit:hover{/*while hovering on the submit box-shadow appears*/
   padding: 0.3em 6em;
   background: #660000;
-box-shadow: 3px 3px 7px gray;
+  box-shadow: 3px 3px 7px gray;
 }
 .reset{
-    transition: padding 3s;
+  transition: padding 3s;/*reset box is using the transition so it moves*/
 }
-.reset:hover{
+.reset:hover{/*while hovering on the reset box-shadow appears*/
   padding: 0.3em 6em;
   background: #660000;
 box-shadow: 3px 3px 7px black;
 }
-.detail{
+.detail{/*It include the cursive font that is taken from Google font*/
   padding: 4.7%;
   margin: 0%;
-   text-align: center;
+  text-align: center;
   @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
   font-family: 'Clicker Script', cursive;
 }
-footer{
+footer{/*This helps to make attractive footer*/
   background: #4C000C;
-  padding-top:  1%;
+  padding-top:  1%;/*It provide padding 1% from top and bottom */
   padding-bottom: 1%;
-   margin: 0%;
-   width: 100%;
-   margin-top: -0.8%;
+  margin: 0%;/*It gives margin 0% and -0.8% from top  */
+  width: 100%;
+  margin-top: -0.8%;
  }
- .quotes{
+.quotes{/*It design on the quotes div by giving padding:3% and giving font-size:30px  */
   background-color: #660000;
 
   font-size: 30px;
@@ -169,81 +167,72 @@ footer{
   padding: 3%;
 
 }
-.copy{
-
+.copy{/*It is the last part of the footer*/
   background-color: #4C000C;
   color: white;
   text-align: center;
 }
-.copy pre{
-
+.copy pre{/*It is the font type taken from the google font */
 	font-family: 'Ubuntu', sans-serif;
-
 }
-
 .social {
-padding-left: 531px;
-
+  padding-left: 531px;
 }
-   .social ul{
-     display: flex;
-     flex-direction: row;
-   /*padding-left: 35%;
-   padding-top: 2%;*/
-
+.social ul{/*It listed all the items in row*/
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  padding-top: 2%;
  }
-   .social ul li{
-     list-style: none;
-     background: #4C000C;
-      color: white;
-      padding: 0.5%;
-      margin:0.3 %;
-   }
-   .social ul li a  {
+ .social ul li{/*It remove the notation of the navigation items kept nothing*/
+   list-style: none;
+   background: #4C000C;
+   color: white;
+   padding: 0.5%;/*It gives padding 0.5% to navigation items seperately*/
+   margin:0.3 %;/*It gives margin 0.3% to navigation items seperatly*/
+}
+.social ul li a  {/*It remove the underline of the navigation items kept nothing*/
   text-decoration: inherit;
 }
-.social ul li:hover{
+.social ul li:hover{/*It helps to hover in social sites icon and change its color while hovering*/
   background: gray;
-   border-radius: 30%;
-
+  border-radius: 30%;
  }
-.social ul li:hover a{
+.social ul li:hover a{/*It makes the background of  link site white while hovering */
   color: white}
 @media all and (max-width: 600px){
-  .lax {
+/*This is done for the responsive or for the mobile view. Mobile view appears when the size is less or equal to 600px*/
+.lax {
     margin-top: 16%;
     padding-bottom: 2%;
   }
-  	.menubar ul{
+.menubar ul{
   		flex-flow: column wrap;
       width: 100%;
       padding-top: 10%;
   	}
-
-    .menubar ul li {
+.menubar ul li {
       text-align: center;
-      flex-direction:column;
+      flex-direction:column;/*This keep all the menubar items in column*/
     }
-	section{
+section{
 		flex-flow: row nowrap;
     font-size: 10px;
 	}
-  .detail{
+.detail{
     display: none;
   }
-	.article{
+.article{
 		width: 98%;
 		margin:1%;
 	}
-
-  }
   footer{
     margin-top: 0%;
   }
-  .lax{
+.lax{
     background-size: cover;
   }
-  .social {
-    padding-left: 25%;
+.social {
+    padding-left: 25%;/*gives padding 25% from left*/
   }
 }

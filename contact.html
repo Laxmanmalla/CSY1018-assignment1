@@ -1,105 +1,112 @@
+<!--
+Name:Laxman Malla
+UN ID:16443353 -->
+<!--This  is my home page which contain three parts i.e. header,section and footer.
+ Header itself contain three div class,
+Footer also contain three div class -->
 <!DOCTYPE html>
-<html>
-      <head>
-        <link rel="icon" href="images/c1.jpg">
-
-
-      </head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>contact</title>
-      <link rel="stylesheet"type="text/css"href="css/4.css">
-
-  <body>
-      <header>
-        <div class="lax">
-      <a href="index.html"><img src="images/logo.jpg"></a>
-      </div>
-
-        <div class="name">
-          <h1>LAXMAN MALLA(Thakuri)</h1>
-          </div>
-      <div class="menubar">
-      <ul>
-         <li> <a href="index.html">Home</a></li>
-         <li> <a href="bio.html">About</a></li>
-         <li> <a href="cv.html">CV</a></li>
-         <li> <a href="contact.html">Contact</a></li>
+<html><!--start of html tag-->
+   <head><!-- This is begin of head -->
+         <link rel="icon" href="images/c1.jpg"><!-- This helps to put icons in title -->
+         <meta name="viewport" content="width=device-width, initial-scale=1"><!--This helps us to display or view my website in mobile -->
+   <title>
+      contact
+   </title><!-- This display the title of my website named as contact-->
+          <link rel="stylesheet"type="text/css"href="css/4.css"><!--It links the CSS file so that my website become more attractive-->
+  </head><!-- This end of head -->
+  <body><!--Begin of body tag-->
+  <header><!--start of header tag -->
+  <div class="lax"><!--New div class named lax is made -->
+      <a href="index.html"><img src="images/logo.jpg"></a><!--My own logo is kept by using img src tag and linked to index.html by
+      using a href tag -->
+   </div>
+   <div class="name"><!--New div class name is made -->
+         <h1>LAXMAN MALLA(Thakuri)</h1><!--It displays My name as header-->
+   </div>
+   <div class="menubar"><!--New div class menubar is made-->
+   <ul><!--It helps to list out my navigation items in unordered list -->
+      <li> <a href="index.html">Home</a></li><!--It link to index.html page-->
+      <li> <a href="bio.html">About</a></li><!--It link to bio.html page -->
+      <li> <a href="cv.html">CV</a></li><!--It link to CV.html page -->
+      <li> <a href="contact.html">Contact</a></li><!--It link to contact.html page -->
+    </ul><!--It is the end of unordered list-->
+    </div>
+    </header><!--Here is the end of Header-->
+    <section><!--It  is the begin of  section part which contain three div where
+        first div contain the form- name, second div contain the form-data and lastly
+         final div contain information of me.-->
+     <div class="name"><!--This div is for the form-name which include only the name of the data-->
+     <form action="contact.html" method="get"><!--begin of form tag-->
+     <ul>
+             <!--Label helps to put the data items inside the parenthesis-->
+         <li><label>first name:</label></li>
+         <li><label>last name:</label></li>
+         <li><label>gender:</label></li>
+         <li><label>Profession:</label></li>
+         <li><label>Birthdate:</label></li>
+         <li><label>E-mail:</label></li>
+         <li><label>feedback:</label></li>
        </ul>
-     </div>
-     </header>
-     <section>
-
-         <div class="name">
-         <form action="contact.html" method="get">
-           <ul>
-             <li><label>first name:</label></li>
-             <li><label>last name:</label></li>
-             <li><label>gender:</label></li>
-             <li><label>Profession:</label></li>
-             <li><label>Birthdate:</label></li>
-             <li><label>E-mail:</label></li>
-             <li><label>feedback:</label></li>
-           </ul>
-         </div>
-         <div class="data">
-           <ul>
-             <li><input type="text" name="firstname"placeholder="firstname"required></li>
-             <li><input type="text" name="lastname"placeholder="lastname"required></li>
-             <li> <input type="radio" name="gender" value="male"> Male
-             <input type="radio" name="gender" value="female"> Female</li>
-             <li><select name="profession">
-                 <option value="student">student</option>
-                 <option value="lecturer">lecturer</option>
-                 <option value="programmer">programmer</option>
-                   <option value="coder">coder</option>
-               </select>
-             </li>
-             <li><input type="date"name="birth_date"value="date"></li>
-             <li><input type="E-mail"name="E-mail"placeholder="abc@gmail.com"><li>
-             <li> <textarea name:"feedback" rows="7"cols="55"></textarea></li>
-             <li><input type="submit"class="submit"name="submit">
-            <input class="reset"type="reset"value="reset form"></li>
-           </ul>
-         </form>
        </div>
-
-         <div class="detail">
+       <div class="data"><!--This div is for the form-data which includes only data-->
+       <ul>
+             <!--Input helps to take the data from the users, placeholder helps
+             to display the written text already inside the input boxes.-->
+           <li><input type="text" name="firstname"placeholder="firstname"required></li>
+           <li><input type="text" name="lastname"placeholder="lastname"required></li>
+           <li> <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female</li>
+            <li><select name="profession">
+                 <!--Option value helps to select different option as we required-->
+            <option value="student">student</option>
+            <option value="lecturer">lecturer</option>
+            <option value="programmer">programmer</option>
+            <option value="coder">coder</option>
+         </select>
+            </li>
+            <li><input type="date"name="birth_date"value="date"></li>
+            <li><input type="E-mail"name="E-mail"placeholder="abc@gmail.com"><li>
+            <li> <textarea name:"feedback" rows="7"cols="55"></textarea></li>
+            <li><input type="submit"class="submit"name="submit">
+            <input class="reset"type="reset"value="reset form"></li>
+         </ul>
+         </form><!--It is the end of form tag-->
+         </div>
+         <div class="detail"><!--this div is for my contact, email and other informations-->
            <h1>LET'S KEEP IN TOUCH!</h1>
            <h1>EMAIL</h1>
            <p>laxmanmalla007@gmail.com</p>
            <h1>TELEPHONE</h1>
            <p>071-410431</p>
            <h1>ADDRESS</h1>
-           <p>JORPATI, Narayantar-Ktm
+           <p>
+             JORPATI, Narayantar-Ktm
              Nepal</p>
+          </address>
+          </section>
+          <footer>
+           <!--This is the begin of footer-->
+            <!--Footer also contain three div -->
+          <div class="quotes">
+          “Good design is obvious. Great design is transparent.” – Joe Sparano<!--It the quote written by -Joe Sparano-->
+          </div>
 
-           </address>
-    </section>
-
-
-    <footer>
-    <div class="quotes">
-        “Good design is obvious. Great design is transparent.” – Joe Sparano
-      </div>
-
-  <div class="social">
-    <ul>
-      <li><a href="https://www.facebook.com/"><img src="images/1.1.jpg"></a></li>
-      <li><a href="https://www.youtube.com/"><img src="images/2.1.jpg"></a></li>
-      <li><a href="https://www.twitter.com/"><img src="images/3.1.jpg"></a></li>
-        <li><a href="https://www.instagram.com/"><img src="images/4.1.jpg"></a></li>
-          <li><a href="https://www.gmail.com/"><img src="images/5.jpg"></a></li>
-        </ul>
-  </div>
-  <div class="copy">
-<pre>
-&copy; Copyright2017: All Rights Reserved
-Email:Laxmanmalla007@gmail.com
-</pre>
-</div>
-
-</footer>
-
-
-</body>
-</html>
+           <div class="social">
+           <!--images of different social sites are kept and it is link to all my profiles in different social sites-->
+           <ul>
+               <li><a href="https://www.facebook.com/laxman.malla.946"><img src="images/1.1.jpg"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCW4M9yWxjE1VS9CmZ6MuG7A"><img src="images/2.1.jpg"></a></li>
+               <li><a href="https://twitter.com/LaxmanMalla12"><img src="images/3.1.jpg"></a></li>
+               <li><a href="https://www.instagram.com/luxmaan_thakuree/"><img src="images/4.1.jpg"></a></li>
+               <li><a href="https://www.gmail.com/laxmanmalla007"><img src="images/5.jpg"></a></li>
+           </ul>
+           </div>
+           <div class="copy">
+           <pre><!--this helps to write sentences in paragraph -->
+           &copy; Copyright2017: All Rights Reserved
+           Email:Laxmanmalla007@gmail.com
+           </pre>
+           </div>
+           </footer><!--Here is the end of footer tag-->
+           </body><!--end of body tag-->
+</html><!--the stop of html tag-->

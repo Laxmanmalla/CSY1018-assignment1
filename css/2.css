@@ -1,130 +1,135 @@
-body{
-  font-size: 14px;
-  margin: 0;
+/*
+Name:Laxman Malla
+UN ID:16443353*/
+/*My css file of bio.html contain body, header, section, footer and lastly I
+have used @media to moake responsive */
+body{/* this helps to make body part attractive*/
+  font-size: 14px;/*it gives fontsize of body part 14px*/
+  margin: 0;/*it gives margin 0 to body part*/
   width: cover;
-   line-height: 30px;
+  line-height: 30px;/*It gives line height of body part 30px*/
+  background: #4C000C;
 }
-h1,h2,h3,h4,h5,h6,p,ul{
+h1,h2,h3,h4,h5,h6,p,ul{/*this is written to maintain margin
+  and padding in header and paragraph */
   margin: 0;
   padding: 0}
-header{
+header{/*this helps to make attractive header*/
   background: #4C000C;
   font-size: 14px;
-  padding: 0.5%;
-  box-shadow: 2px 2px 2px 2px;
+  padding: 0.5%;/*It gives padding 0.5% to the header*/
 }
-.lax{
-  display: flex;
-  float: left;
+.lax{/*It is the first div class of header*/
+  float: left;/*It helps this div to move left*/
   padding: 1%;
   margin: 1%;
   width: auto;
-    width: 50px;
-    height: 50px;
-    font-weight: bold;
-    position: relative;
-    -webkit-animation: mymove 5s infinite;
-    animation: mymove 5s infinite;
-    background-size: cover;
+  width: 50px;/*This gives the width of the lax div pic 50px*/
+  height: 50px;/*This gives the height of the lax div pic 50px*/
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;/*It gives the animation to the logo*/
+  animation: mymove 5s infinite;
+  background-size: cover;/*It provide total size of the lax div cover i.e. fit to the page*/
 }
 .lax img{
-  width:150px;
-  height:100px;
-  border-radius: 20px;
+  width:150px;/*This gives the width of the logo pic 150px*/
+  height:100px;/*This gives the height of the logo pic 100px*/
+  border-radius: 20px;/*It provide the border radius 20px of the pic so that it become curved*/
 }
 
 @-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 100px;}
+    from {left: 0px;}/*It moves the logo from left */
+    to {left: 100px;}/*It moves end to left only*/
 }
 .name{
-  text-align: center;
-  color: white;
+  text-align: center;/*It put my name in center of the div*/
+  color: white;/*It provide the font color s white*/
   width: auto;
   font-size: 15px;
   font-style:normal;
   width: auto;
   padding-right: 10%;
-  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);/*It helps to give new font from googlefont*/
   font-family: 'Fira Sans', sans-serif;
 }
-.menubar{
+.menubar{/*This provide whole menubar div color as #4C000C*/
   background: #4C000C;
 }
 .menubar ul{
   display: flex;
   flex-flow: row wrap;
-  justify-content:flex-end;
+  justify-content:flex-end;/*It keep the whole navigation content to the end*/
 }
-.menubar ul li{
-  list-style: none;
+.menubar ul li{/*It modify all the items inside the ul tag */
+  list-style: none;/*By this the list style will be nothing*/
   background: #7A0012;
-   color: white;
+  color: white;
   padding: 1%;
   margin: 1.5%;
   font-size: 20px;
 }
-.menubar ul li a{
-    text-decoration:inherit;
-    color: white;
+.menubar ul li a{/*this is for link items*/
+   text-decoration:inherit;/*It remove the line under the navigation items*/
+   color: white;
 }
-.menubar ul li:hover{
+.menubar ul li:hover{/*It helps in hover of the navigation items
+  whose color changes to gray on hover and its border radius is made 10px to make curved in edge*/
   background: gray;
   border-radius: 10px;
 }
 .menubar ul li:hover a{
   color: white}
-section{   background-image: url('../images/nat.jpg');
-  background-repeat: no-repeat;
-
-display: flex;
-flex-direction: row;
+section{
+  background-image: url('../images/nat.jpg');/*This helps to put the background images*/
+  background-repeat: no-repeat;/*It doesn't repeat if the the background images end*/
+  width: 100%;
+  display: flex;
+  flex-direction: row;/*It display both the div in one row */
 }
-.img {
-margin: 0%;
-margin-top: 0%;
-margin-bottom: 0%;
-padding: 0%;
+.img {/*It givees the margin opx from top,bottom and gives padding 0px*/
+  margin: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 0%;
 }
-.img img{
+.img img{/*It gives the width and height for the images in img div*/
   width:500px;
   height:600px
 }
 .para{
   font-size: 20px;
-  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);/*It is the font taken from the google font*/
   color: white;
   font-size: 15px;
   font-family: 'Clicker Script', cursive;
   text-align: center;
   margin-bottom: 0.8%;
   padding: 2%;
-
 }
 .para h1{
   transition: padding 3s;
 }
-.para a:hover{
-      padding: 0.4em 1em;
-      background: #660000;
-    box-shadow: 3px 3px 7px black;
-    border-radius: 5%;
-    color: gray;
-    }
-.para h1:hover{
-    padding: 0.3em 6em;
-    background: #660000;
-    color: gray;
-  box-shadow: 3px 3px 7px black;
+.para a:hover{/*It helps when we hover on links the box-shadows appears with background color gray  */
+   padding: 0.4em 1em;
+   background: #660000;
+   box-shadow: 3px 3px 7px black;
+   border-radius: 5%;
+   color: gray;
 }
-footer{
+.para h1:hover{/*It helps when we hover on links the box-shadows appears with background color gray  */
+   padding: 0.3em 6em;
+   background: #660000;
+   color: gray;
+   box-shadow: 3px 3px 7px black;
+}
+footer{/*This helps to make attractive footer*/
   background: #4C000C;
-  padding: 1%;
-   margin: 0%;
-
-   margin-top: -0.8%;
+  padding: 1%;/*It provide padding 1% from top */
+  margin: 0%;
+  margin-top: -0.8%;/*It gives margin -0.8% from top*/
  }
- .quotes{
+ .quotes{/*It design on the quotes div by giving padding:3% and giving font-size:30px  */
   background-color: #660000;
   height: 90px;
   font-size: 30px;
@@ -133,76 +138,73 @@ footer{
   text-align: center;
   padding-top: 2%;
 }
-.copy{
+.copy{/*It is the last part of the footer*/
  height: 100px;
-  background-color: #4C000C;
-  color: white;
-  padding-left: 35%;
+ background-color: #4C000C;
+ color: white;
+ padding-left: 35%;
 }
 .copy pre{
 	margin-left:1%;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', sans-serif;/*It is the font type taken from the google font */
 	margin-top: -1%;
 	padding-top: 30px;
 }
-
-
-   .social ul{
-     display: flex;
-     flex-direction: row;
-     padding-left: 35%;
+.social ul{
+   display: flex;
+   flex-direction: row;/*It listed all the items in row*/
+   padding-left: 35%;
  }
-   .social ul li{
-     list-style: none;
-     background: #4C000C;
-      color: white;
-      padding: 0.5%;
-      margin:0.3 %;
-   }
-   .social ul li a  {
-  text-decoration: inherit;
+.social ul li{
+   list-style: none;/*It remove the notation of the navigation items kept nothing*/
+   background: #4C000C;
+   color: white;
+   padding: 0.5%;/*It gives padding 0.5% to navigation items seperately*/
+   margin:0.3 %;/*It gives margin 0.3% to navigation items seperatly*/
 }
-.social ul li:hover{
-  background: gray;
+.social ul li a  {
+   text-decoration: inherit;/*It remove the underline of the navigation items kept nothing*/
+}
+.social ul li:hover{ /*It helps to hover in social sites icon and change its color while hovering*/
+   background: gray;
    border-radius: 30%;
  }
-.social ul li:hover a{
-  color: white;
+.social ul li:hover a{/*It makes the background of  link site white while hovering */
+   color: white;
+}
+@media (max-width: 600px)
+   /*This is done for the responsive or for the mobile view. Mobile view appears when the size is less or equal to 600px*/
+{
+.lax {
+   margin-top: 16%;
+   padding-bottom: 2%;
+}
+.menubar ul{
+   flex-flow: column wrap;
+   width: 100%;
+   padding-top: 10%;
 }
 
-
-@media (max-width: 600px)
-{
-	 .lax {
-
-    margin-top: 16%;
-    padding-bottom: 2%;
+.menubar ul li {/*This keep all the menubar items in column*/
+   text-align: center;
+	 flex-direction:column;
+}
+section{
+  background-image:none;
+  flex-direction: column;}
+.img img{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+}
+.para{
+  color:black;
+}
+.social {
+  padding-left: 5%;/*gives padding 5% from left*/
   }
-  	.menubar ul{
-  	flex-flow: column wrap;
-    width: 100%;
-    padding-top: 10%;
-  	}
-
-    .menubar ul li {
-      text-align: center;
-	  flex-direction:column;
-    }
-
-    section{background-image:none; flex-direction: column;}
-    .img img{
-      width:100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .para{color:black;}
-  .social {
-    padding-right: 40%;
-  }
-  @-webkit-keyframes mymove {
-      from {left: 0px;}
-      to {left:250px;}
-
-
+@-webkit-keyframes mymove {/*This is for the animation and moves from left to right and then to left*/
+    from {left: 0px;}
+    to {left:250px;}
   }
 }
