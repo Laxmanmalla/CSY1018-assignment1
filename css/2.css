@@ -6,7 +6,6 @@ have used @media to moake responsive */
 body{/* this helps to make body part attractive*/
   font-size: 14px;/*it gives fontsize of body part 14px*/
   margin: 0;/*it gives margin 0 to body part*/
-  width: cover;
   line-height: 30px;/*It gives line height of body part 30px*/
   background: #4C000C;
 }
@@ -38,7 +37,7 @@ header{/*this helps to make attractive header*/
   border-radius: 20px;/*It provide the border radius 20px of the pic so that it become curved*/
 }
 
-@-webkit-keyframes mymove {
+@keyframes mymove {
     from {left: 0px;}/*It moves the logo from left */
     to {left: 100px;}/*It moves end to left only*/
 }
@@ -50,10 +49,9 @@ header{/*this helps to make attractive header*/
   font-style:normal;
   width: auto;
   padding-right: 10%;
-  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);/*It helps to give new font from googlefont*/
   font-family: 'Fira Sans', sans-serif;
 }
-.menubar{/*This provide whole menubar div color as #4C000C*/
+.menubar{
   background: #4C000C;
 }
 .menubar ul{
@@ -99,7 +97,6 @@ section{
 }
 .para{
   font-size: 20px;
-  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);/*It is the font taken from the google font*/
   color: white;
   font-size: 15px;
   font-family: 'Clicker Script', cursive;
@@ -110,7 +107,7 @@ section{
 .para h1{
   transition: padding 3s;
 }
-.para a:hover{/*It helps when we hover on links the box-shadows appears with background color gray  */
+.para a:hover{
    padding: 0.4em 1em;
    background: #660000;
    box-shadow: 3px 3px 7px black;
@@ -160,10 +157,10 @@ footer{/*This helps to make attractive footer*/
    background: #4C000C;
    color: white;
    padding: 0.5%;/*It gives padding 0.5% to navigation items seperately*/
-   margin:0.3 %;/*It gives margin 0.3% to navigation items seperatly*/
+   margin:0.3%;/*It gives margin 0.3% to navigation items seperatly*/
 }
 .social ul li a  {
-   text-decoration: inherit;/*It remove the underline of the navigation items kept nothing*/
+   text-decoration: inherit;
 }
 .social ul li:hover{ /*It helps to hover in social sites icon and change its color while hovering*/
    background: gray;
@@ -202,9 +199,5 @@ section{
 }
 .social {
   padding-left: 5%;/*gives padding 5% from left*/
-  }
-@-webkit-keyframes mymove {/*This is for the animation and moves from left to right and then to left*/
-    from {left: 0px;}
-    to {left:250px;}
   }
 }

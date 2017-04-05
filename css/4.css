@@ -6,7 +6,6 @@ have used @media to moake responsive */
 body{/* this helps to make body part attractive*/
   font-size: 14px;/*it gives fontsize of body part 14px*/
   margin: 0;/*it gives margin 0 to body part*/
-  width: cover;
   line-height: 30px;/*It gives line height of body part 30px*/
 }
 h1,h2,h3,h4,h5,h6,p,ul{/*this is written to maintain margin
@@ -36,7 +35,7 @@ header{/*this helps to make attractive header*/
   height:100px;/*This gives the height of the logo pic 100px*/
   border-radius: 20px;/*It provide the border radius 20px of the pic so that it become curved*/
 }
-@-webkit-keyframes mymove {
+@keyframes mymove {
   from {left: 0px;}/*It moves the logo from left */
   to {left: 100px;}/*It moves end to left only*/
 }
@@ -48,10 +47,9 @@ header{/*this helps to make attractive header*/
   font-style:normal;
   width: auto;
   padding-right: 10%;
-  @import url(https://fonts.googleapis.com/css?family=Fira+Sans);/*It helps to give new font from googlefont*/
   font-family: 'Fira Sans', sans-serif;
 }
-.menubar{/*This provide whole menubar div color as #4C000C*/
+.menubar{
   background: #4C000C;
 }
 .menubar ul{
@@ -146,12 +144,11 @@ box-shadow: 3px 3px 7px black;
   padding: 4.7%;
   margin: 0%;
   text-align: center;
-  @import url(https://fonts.googleapis.com/css?family=Clicker+Script);
   font-family: 'Clicker Script', cursive;
 }
-footer{/*This helps to make attractive footer*/
+footer{
   background: #4C000C;
-  padding-top:  1%;/*It provide padding 1% from top and bottom */
+  padding-top:  1%;
   padding-bottom: 1%;
   margin: 0%;/*It gives margin 0% and -0.8% from top  */
   width: 100%;
@@ -189,12 +186,12 @@ footer{/*This helps to make attractive footer*/
    background: #4C000C;
    color: white;
    padding: 0.5%;/*It gives padding 0.5% to navigation items seperately*/
-   margin:0.3 %;/*It gives margin 0.3% to navigation items seperatly*/
+   margin:0.3%;/*It gives margin 0.3% to navigation items seperatly*/
 }
-.social ul li a  {/*It remove the underline of the navigation items kept nothing*/
-  text-decoration: inherit;
+.social ul li a  {
+    text-decoration: inherit;
 }
-.social ul li:hover{/*It helps to hover in social sites icon and change its color while hovering*/
+.social ul li:hover{
   background: gray;
   border-radius: 30%;
  }

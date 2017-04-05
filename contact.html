@@ -9,16 +9,16 @@ Footer also contain three div class -->
    <head><!-- This is begin of head -->
          <link rel="icon" href="images/c1.jpg"><!-- This helps to put icons in title -->
          <meta name="viewport" content="width=device-width, initial-scale=1"><!--This helps us to display or view my website in mobile -->
+         <meta charset="utf-8">
    <title>
       contact
    </title><!-- This display the title of my website named as contact-->
-          <link rel="stylesheet"type="text/css"href="css/4.css"><!--It links the CSS file so that my website become more attractive-->
+          <link rel="stylesheet" type="text/css" href="css/4.css"><!--It links the CSS file so that my website become more attractive-->
   </head><!-- This end of head -->
   <body><!--Begin of body tag-->
   <header><!--start of header tag -->
   <div class="lax"><!--New div class named lax is made -->
-      <a href="index.html"><img src="images/logo.jpg"></a><!--My own logo is kept by using img src tag and linked to index.html by
-      using a href tag -->
+      <a href="index.html"><img src="images/logo.jpg" alt="logo"></a><!--My own logo is kept by using img src tag and linked to index.html by using a href tag -->
    </div>
    <div class="name"><!--New div class name is made -->
          <h1>LAXMAN MALLA(Thakuri)</h1><!--It displays My name as header-->
@@ -36,7 +36,7 @@ Footer also contain three div class -->
         first div contain the form- name, second div contain the form-data and lastly
          final div contain information of me.-->
      <div class="name"><!--This div is for the form-name which include only the name of the data-->
-     <form action="contact.html" method="get"><!--begin of form tag-->
+     <form><!--begin of form tag-->
      <ul>
              <!--Label helps to put the data items inside the parenthesis-->
          <li><label>first name:</label></li>
@@ -47,13 +47,14 @@ Footer also contain three div class -->
          <li><label>E-mail:</label></li>
          <li><label>feedback:</label></li>
        </ul>
+     </form>
        </div>
-       <div class="data"><!--This div is for the form-data which includes only data-->
+       <div class="data"> <!--This div is for the form-data which includes only data-->
        <ul>
              <!--Input helps to take the data from the users, placeholder helps
              to display the written text already inside the input boxes.-->
-           <li><input type="text" name="firstname"placeholder="firstname"required></li>
-           <li><input type="text" name="lastname"placeholder="lastname"required></li>
+           <li><input type="text" name="firstname" placeholder="firstname" required></li>
+           <li><input type="text" name="lastname" placeholder="lastname" required></li>
            <li> <input type="radio" name="gender" value="male"> Male
                 <input type="radio" name="gender" value="female"> Female</li>
             <li><select name="profession">
@@ -63,16 +64,16 @@ Footer also contain three div class -->
             <option value="programmer">programmer</option>
             <option value="coder">coder</option>
          </select>
-            </li>
-            <li><input type="date"name="birth_date"value="date"></li>
-            <li><input type="E-mail"name="E-mail"placeholder="abc@gmail.com"><li>
-            <li> <textarea name:"feedback" rows="7"cols="55"></textarea></li>
-            <li><input type="submit"class="submit"name="submit">
-            <input class="reset"type="reset"value="reset form"></li>
+       </li>
+            <li><input type="text" name="birth_date" value="date"></li>
+            <li><input type="email" name="email" placeholder="abc@gmail.com"><li>
+            <li> <textarea name="feedback" rows="7" cols="55"></textarea></li>
+            <li><input type="submit" class="submit" name="submit">
+            <input class="reset" type="reset" value="reset form"></li>
          </ul>
-         </form><!--It is the end of form tag-->
-         </div>
-         <div class="detail"><!--this div is for my contact, email and other informations-->
+       </div>
+
+         <div class="detail">
            <h1>LET'S KEEP IN TOUCH!</h1>
            <h1>EMAIL</h1>
            <p>laxmanmalla007@gmail.com</p>
@@ -82,7 +83,7 @@ Footer also contain three div class -->
            <p>
              JORPATI, Narayantar-Ktm
              Nepal</p>
-          </address>
+        </div>
           </section>
           <footer>
            <!--This is the begin of footer-->
@@ -94,11 +95,11 @@ Footer also contain three div class -->
            <div class="social">
            <!--images of different social sites are kept and it is link to all my profiles in different social sites-->
            <ul>
-               <li><a href="https://www.facebook.com/laxman.malla.946"><img src="images/1.1.jpg"></a></li>
-               <li><a href="https://www.youtube.com/channel/UCW4M9yWxjE1VS9CmZ6MuG7A"><img src="images/2.1.jpg"></a></li>
-               <li><a href="https://twitter.com/LaxmanMalla12"><img src="images/3.1.jpg"></a></li>
-               <li><a href="https://www.instagram.com/luxmaan_thakuree/"><img src="images/4.1.jpg"></a></li>
-               <li><a href="https://www.gmail.com/laxmanmalla007"><img src="images/5.jpg"></a></li>
+               <li><a href="https://www.facebook.com/laxman.malla.946"><img src="images/1.1.jpg" alt="fb"></a></li>
+               <li><a href="https://www.youtube.com/channel/UCW4M9yWxjE1VS9CmZ6MuG7A"><img src="images/2.1.jpg" alt="yb"></a></li>
+               <li><a href="https://twitter.com/LaxmanMalla12"><img src="images/3.1.jpg" alt="twi"></a></li>
+               <li><a href="https://www.instagram.com/luxmaan_thakuree/"><img src="images/4.1.jpg" alt="ins"></a></li>
+               <li><a href="https://www.gmail.com/laxmanmalla007"><img src="images/5.jpg" alt="gm"></a></li>
            </ul>
            </div>
            <div class="copy">
